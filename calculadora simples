@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main(){
+    float n1, n2, resultado;
+    char operacao;
+
+    printf("Calculadora: \n");
+    printf("Digite um numero: ");
+    scanf("%f", &n1);
+    printf("Digite o segundo numero: ");
+    scanf("%f", &n2);
+    printf("Escolha a operacao: ");
+    scanf("%s", &operacao);
+    if(operacao == '+'){
+        resultado = n1 + n2;
+        printf("Resultado: %.2f", resultado);
+    }
+    else if(operacao == '-'){
+        resultado = n1 - n2;
+        printf("Resultado: %.2f", resultado);
+    }
+    else if(operacao == '*'){
+        resultado = n1 * n2;
+        printf("Resultado: %.2f", resultado);
+    }
+    else{
+        resultado = n1 / n2;
+        printf("Resultado: %.2f", resultado);
+    }
+
+    return 0;
+}
